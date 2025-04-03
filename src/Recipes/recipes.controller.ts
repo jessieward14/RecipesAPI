@@ -41,10 +41,10 @@ getproduct(@Param('id') prodId:string,){
 @Patch(':id')
 async updateRecipe(
     @Param('id') prodId:string, 
-    @Body('name') prodName:string,
-    @Body('ingredients') prodIngredients:string,
-    @Body('totalcooktime') prodTotalCookTime:number,
-    @Body('instructions') prodInstructions: string,
+    @Body('Name') prodName:string,
+    @Body('Ingredients') prodIngredients:string,
+    @Body('TotalCookTime') prodTotalCookTime:number,
+    @Body('Instructions') prodInstructions: string,
     
 ){
     await this.recipesService.updateRecipes(prodId, prodName, prodIngredients, prodTotalCookTime, prodInstructions);

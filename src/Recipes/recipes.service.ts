@@ -64,6 +64,7 @@ export class RecipesService {
         if (instructions) {
             updatedRecipes.Instructions = instructions;
         }
+        console.log(ingredients);
         updatedRecipes.save();
     }
 
